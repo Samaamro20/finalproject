@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Personal Information</title>
+</head>
+<body>
+<div id="info">
+<h1>update LandMarks</h1>
+<form action="/updatelandmark" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Land Mark" value="<%= LandMarks[0].name %>"/>
+    <br><br>
+        <label for="name">Country:</label>
+        <input type="text" id="country" name="country" placeholder="Enter Country" value="<%= LandMarks[0].country %>"/>
+    <br><br>
+        <label for="city">Continent:</label>
+        <input type="text" id="continent" name="continent" placeholder="Enter Continent" value="<%= LandMarks[0].continent %>"/>
+    <br><br>
+    <label for="pincode">Visitors:</label>
+        <input type="number" id="visitors" name="visitors" placeholder="Enter visitors" value="<%= LandMarks[0].visitors %>"/>
+    <br><br>
+        <input type="submit" value="Save" />
+</form>
+</div>
+</body>
+</html>
