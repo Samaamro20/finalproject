@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>title</th>
+    <th>genre</th>
+    <th>rating</th>
+    <th>Edit/Delete</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let landmark of landmarks">
+    <th scope="row">{{landmark.id}}</th>
+    <th scope="row">{{landmark.name}}</th>
+    <th scope="row">{{landmark.country}}</th>
+    <th scope="row">{{landmark.continent}}</th>
+
+    <!-- <app-rate [avg]=movie.rating></app-rate> -->
+    <td>
+              <button type="button" class="btn btn-danger" >Delete</button>
+            </td>
+
+
+
+    <td>
+    </td>
+  </tr>

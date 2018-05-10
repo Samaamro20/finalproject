@@ -1,0 +1,36 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>country</th>
+    <th>visitors</th>
+    <th>continent</th>
+    <th>pppp</th>
+    <th>Delete</th>
+    <th>Edit</th>
+    <th>Show detiles</th>
+
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr *ngFor="let landmark of landmarks">
+    <th scope="row">{{landmark.id}}</th>
+    <th scope="row">{{landmark.name}}</th>
+    <th scope="row">{{landmark.country}}</th>
+    <th scope="row">{{landmark.visitors}}</th>
+    <th scope="row">{{landmark.continent}}</th> 
+    <app-rate [avg]=landmark.visitors></app-rate>
+    <td>
+              <button type="button" class="btn btn-danger" (click)="deleteItem(landmark.id)">Remove</button>
+            </td>
+    <td>
+        <button type="button" class="btn btn-success" >Edit</button>
+    </td>
+    <td>
+        <button type="button" class="btn btn  "   >Show detiles</button>
+    </td>
+
+  </tr>
+

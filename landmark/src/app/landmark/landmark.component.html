@@ -1,0 +1,39 @@
+
+<h1>{{name}}</h1>
+<button class="btn btn-primary"[class.active]="isactive">butoon</button>
+<button class="btn btn-primary"[class.active]="isactive" [style.backgroundColor]="isactive ? 'blue':'black'">butoon</button>
+<button (click)="get_posts()">Save</button>
+<input (mouseover)="Save()"/>
+<input [value]='email' (keyup.enter)="onkeyup()"/>
+<input [(ngModel)]='email1' (keyup.enter)="onkeyuptow()"/>
+<div *ngFor="let post of posts | async">
+  {{ post | json }}
+</div>
+<img src="">
+
+
+
+  
+ 
+
+  
+  <div class="aa" *ngFor="let student of students" >
+    
+    {{student.name}}<br>
+    {{student.mojar}}<br>
+    {{student.avg}}<br>
+
+<app-rate [avg]=student.avg></app-rate>
+  <!-- <app-rate [avg]=student.avg (buttonclick)="bc"></app-rate> -->
+
+
+
+<hr>
+
+
+
+    
+    <br>
+     </div> 
+
+
